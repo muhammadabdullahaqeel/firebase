@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+   
+</head>
+
+<body onload="authCheck();getPost()">
+    <h1>DASHBOARD PAGE</h1>
+
+    <div>
+    <textarea id="title" placeholder="Blog Title"></textarea>
+    <textarea id="desc" placeholder="Blog Description"></textarea>
+    <input type="checkbox" id="checkbox"> Private
+    <button onclick="blogPost()">Create Blog</button>
+    <button id="updateButton" style="display: none;">Update Post</button>
+    <button id="logoutButton">Logout</button>
+
+
+
+    </div>
+
+    <h1>BLOGS</h1>
+
+
+    <div id="parent">
+
+       
+
+    </div>
+
+
+</body>
+<script type="module" src="dashboard.js"></script>
+
+
+</html>
